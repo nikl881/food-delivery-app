@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load bootstrap_tags %}
+{% block content %}
+    <form method="post" action="{% url 'login' %}?next={{ next }}" class="accountform">
+        <fieldset class="form-group">
+            <legend>Login</legend>
+            {% csrf_token %}
+            {{ user_form | as_bootstrap }}
+            
+             <p><a href="{% url 'password_reset' %}">Forgot my password</a></p>
+             
+            <button type="submit" class="btn btn-primary">Login</button>
+        </fieldset>
+    </form>
+{% endblock %}
