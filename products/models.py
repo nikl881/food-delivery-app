@@ -1,6 +1,6 @@
 from django.db import models
 
-# Will create models below
+# Will create models
 class Product(models.Model):
     name = models.CharField(max_length=254, default='')
     description = models.TextField()
@@ -8,4 +8,4 @@ class Product(models.Model):
     image = models.ImageField(upload_to='images')
 
     def __str__(self):
-    return self.name
+        return self.name
