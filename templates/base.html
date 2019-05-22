@@ -30,6 +30,7 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
+                    
                         <li><a href="{% url 'profile' %}">My account</a></li>
                         <li><a href="{% url 'logout' %}">Log Out</a></li>
                     {%  else %}
@@ -38,7 +39,7 @@
                     {% endif %}
                      <li>
                         <a href="{% url 'view_cart' %}">
-                            <i class="fa fa-shipping-cart"></i>Shopping Cart
+                            <i class="fa fa-shipping-cart"></i>ShoppingCart
                             {% if product_count > 0 %}
                             <label class="badge badge-warning">{{ product_count }}</label>
                         {% endif %}

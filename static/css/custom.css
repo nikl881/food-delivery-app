@@ -77,9 +77,11 @@ caption p {
     filter: none;
     -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
     box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+    height: 60px;
 }    
 
 h3, .h3 {
     font-size: 24px;
     color: red;
 }
+
