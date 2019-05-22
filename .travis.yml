@@ -1,16 +1,6 @@
 language: python
-
-# Enable 3.7 without globally enabling sudo and dist: xenial for other build jobs
-
-matrix:
-  include:
-    - python: 3.7
-      dist: xenial
-      sudo: true
-
-
-install: "pip3 install -r requirements.txt"
-
+python:
+- "3.4"
+install: "pip install -r requirements.txt"
 script:
 - SECRET_KEY="whatever" ./manage.py test
-
