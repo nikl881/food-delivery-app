@@ -69,8 +69,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'fooddelivery.wsgi.application'
 
 
-# DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
-
 if "DATABASE_URL" in os.environ:
     DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
 else:
