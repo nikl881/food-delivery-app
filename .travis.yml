@@ -1,12 +1,6 @@
 language: python
-
-matrix:
-  include:
-    - python: 3.4
-      dist: xenial
-      sudo: true
-      env:
-        - DEVELOPMENT=true
-        - HOSTNAME='0.0.0.0'
-        - IP='0.0.0.0'
-        - PORT='5000'
+python:
+- "3.4"
+install: "pip install -r requirements.txt"
+script:
+- SECRET_KEY="whatever" ./manage.py test
