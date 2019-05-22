@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sushi Express</title>
+    <title>Sushi Express Akito (アキト)</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/cerulean/bootstrap.min.css">
      <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
@@ -25,12 +25,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Sushi Express</a>
+                <a class="navbar-brand" href="/">Akito's Sushi Express (アキト)</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
-                        <li><a href="{% url 'profile' %}">Profile</a></li>
+                        <li><a href="{% url 'profile' %}">My account</a></li>
                         <li><a href="{% url 'logout' %}">Log Out</a></li>
                     {%  else %}
                         <li><a href="{% url 'register' %}">Register</a></li>
@@ -38,7 +38,7 @@
                     {% endif %}
                      <li>
                         <a href="{% url 'view_cart' %}">
-                            <i class="fa fa-shipping-cart"></i>Cart
+                            <i class="fa fa-shipping-cart"></i>Shopping Cart
                             {% if product_count > 0 %}
                             <label class="badge badge-warning">{{ product_count }}</label>
                         {% endif %}
