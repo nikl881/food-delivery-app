@@ -65,23 +65,3 @@ caption p {
     min-height: 40px;
 }
 
-.navbar {
-    background-image: -webkit-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
-    background-image: -o-linear-gradient(#54b4eb, #2fa4e7 60%, #1d9ce5);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#000), color-stop(60%, #000), to(#000));
-    background-image: linear-gradient(#000, #000 60%, #000);
-    background-repeat: no-repeat;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
-    border-bottom: 1px solid #178acc;
-    -webkit-filter: none;
-    filter: none;
-    -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
-    box-shadow: 0 1px 10px rgba(0,0,0,0.1);
-    height: 60px;
-}    
-
-h3, .h3 {
-    font-size: 24px;
-    color: red;
-}
-
