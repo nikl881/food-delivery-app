@@ -1,0 +1,1 @@
+web: gunicorn fooddelivery.wsgi:application
