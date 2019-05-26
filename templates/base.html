@@ -30,7 +30,7 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
-                        <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> Profile</a></li>
+                        <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> Your Account</a></li>
                         <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Log Out</a></li>
                     {%  else %}
                         <li><a href="{% url 'register' %}"><i class="fa fa-user-plus"></i> Register</a></li>
@@ -38,7 +38,7 @@
                     {% endif %}
                     <li>
                         <a href="{% url 'view_cart' %}">
-                            <i class="fa fa-shipping-cart"></i> Cart
+                            <i class="fa fa-shipping-cart"></i> Order list
                             {% if product_count > 0 %}
                             <label class="badge badge-warning">{{ product_count }}</label>
                             {% endif %}
@@ -57,6 +57,11 @@
             </div>
         </div>
     {% endif %}
+    
+    <div class="main-logo">
+<img class="featurette-image img-responsive" src="" alt="main-logo">
+</div>
+    
     <div class="container">
         <div class="display">
             <form action="{% url 'search' %}" method="get">
@@ -68,7 +73,7 @@
     </div>
     <footer>
         <div class="container">
-            <p>Enjoy your fresh sushi!</p>
+            <p>Enjoy your fresh sushi from Akito's Sushi Express!</p>
         </div>
     </footer>
 </body>
