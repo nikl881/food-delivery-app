@@ -1,4 +1,4 @@
-![Welcome](https://raw.githubusercontent.com/nikl881/food-delivery-app/master/sushi_readme.jpg)
+![Welcome](https://raw.githubusercontent.com/nikl881/food-delivery-app/master/sushi.jpg)
 
 
 [![Build Status](https://travis-ci.org/nikl881/food-delivery-app.svg?branch=master)](https://travis-ci.org/nikl881/food-delivery-app)
@@ -13,9 +13,7 @@ Amazon Web Services is a subsidiary of amazon.com that provides on-demand cloud 
 You will learn how to integrate their simple cloud storage service (S3) into your Django project and use it to serve your static and media files.
 
 
-![Welcome](https://raw.githubusercontent.com/nikl881/portfolio/master/static/img/readme.jpg)
-
-## Sushi delivery Express 
+## Sushi Delivery Express 
 
 
 This is the readme file for the online CookBook milestone project of Code Institute.<br/>
