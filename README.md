@@ -1,24 +1,16 @@
 ![Welcome](https://raw.githubusercontent.com/nikl881/food-delivery-app/master/sushi.jpg)
 
+## Travis CI Build status
 
 [![Build Status](https://travis-ci.org/nikl881/food-delivery-app.svg?branch=master)](https://travis-ci.org/nikl881/food-delivery-app)
 
 
-Used in this project:
-
-Sessions in Django, which allow us to keep track of the 'state' between the site and a particular user's browser.
-Stripe, which is a tool for Internet commerce that allows both private individuals and businesses to accept payments.
-You will learn how to integrate it into a Django app.
-Amazon Web Services is a subsidiary of amazon.com that provides on-demand cloud computing platforms to individuals and companies.
-You will learn how to integrate their simple cloud storage service (S3) into your Django project and use it to serve your static and media files.
-
-
 ## Sushi Delivery Express 
 
-The Sushi Delivery Express project is a 'take-away' webapp to select and order Sushi dishes. The general purpose of this website is the fooddelivery function.
+The Sushi Delivery Express project is a 'take-away' webapp to select sushi from the menu and order dishes using customer adres- and billing information. The general purpose of this website is to select and purchase sushi dishes.
 The chosen design and layoutstyle is a typical asian order delivery webapp with a clear function and usability. 
-This data-driven website is dynamic in nature, this means that the user of the website can create an account, update account settings, order en checkout using the cart function.<br/>
-The user also can search dishes from the order page.  
+This data-driven website is dynamic in nature, this means that the user of the website can create an account, update account settings, order food en checkout using the cart and checkout function.
+The user also can search for dishes based on name criterea inside the order page.  
 The website is fitted for mobile, tablet and desktop (fully responsive). 
 
 
@@ -34,22 +26,21 @@ This includes wireframes and mockups and basic images for the branddesign.
 Link to the external project documentation: https://drive.google.com/drive/folders/1j0HzRKoam8EjZAPFfb7HS6ehQz7dCioG?usp=sharing
 
 
-
 ## Features
 
 Existing Features (week 17 - 2019) 
 
-* Landing page with a slideshow of example sushi dishes and a clear navigation bar. 
-* Create account page
-* Login/Logout page
-* Sushi menu page
-* Order/Cart page
-* Checkout page
+* Landing page with a slideshow of example sushi dish images and a clear navigation bar. 
+* Register page, so a new customer can create an account to order dishes. 
+* Login/Logout page, a clear and simpel login page that will login a user with a single mouse click.
+* Sushi menu page, overview of all available sushi dishes, including images, price information and quantitiy information.
+* Order/Cart page, a short overview page with a summary of the total costs of the order.
+* Checkout page, includes billing and adres information to complete the order.
 
 
 Features Left to Implement 
 
-* Customer ratings of dishes
+* Customer ratings of individual dishes
 * Geographical page of delivery location
 
 ## Database schema and initial design
@@ -60,7 +51,12 @@ This because it is quite straightforward to link recipes (as a main part / gener
 Based on the studied theory of the Data Centric module, I came to the conclusion that the combination of Flask, MongoDB and Heroku will work well.
 
 The database schema can be found in the following folder:
-https://drive.google.com/open?id=1-JhsaICva--uwgd_QD44ifeaJxX9_GPm
+
+
+The webapp has been build with Django, which allow us to keep track of the 'state' between the site and a particular user's browser.
+Stripe, which is a tool for Internet commerce that allows both private individuals and businesses to accept payments.
+This has been integrated into this Django app. Amazon Web Services is a subsidiary of amazon.com that provides on-demand cloud computing platforms to individuals and companies.
+The simple AWS cloud storage service (S3) has been used into this Django project. With this static and media files are saved in the AWS backend.
 
 
 ## Technologies Used
@@ -110,8 +106,7 @@ In this section all of the languages, frameworks, libraries, and other tools tha
 *   AWS Amazon webservices 
 *   Travis CI 
 *   Python markup / check site 
-
-
+*   Stripe
 
 
 ## Testing
@@ -127,7 +122,6 @@ The code has been tested on the following devices and is fitted for purpose on a
 
     * Macbook 13" 
     * Windows 10 desktop 27" 
-    * Windows 10 laptop 17" 
     * Iphone 10
     * Huawei mate 20 lite
     * Huawei P30 pro
