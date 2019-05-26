@@ -108,9 +108,10 @@ In this section all of the languages, frameworks, libraries, and other tools tha
 *   AWS Amazon webservices 
 
 *   Travis CI 
+    Used for testing and Continuous integration of the development of the webapp. 
 
 *   Stripe
-
+    Stripe provides APIs that are used to integrate payment processing into the application. 
 
 ## Testing
 
@@ -166,10 +167,10 @@ Below the main features described that are basic functions as currently availabl
 
 | Issue number    | Description     | Implemented Solution  |
 | ------------- |:-------------:| -----:|
-| 1	| Django /checkout/ wont load | Describe solution here    |
+| 1	| Django /checkout/ won't load | Rebuilding urls.py and settings.py until configuration is working  |
 | 2	|  Images are uploaded in AWS backend but wont show to live project |  Describe solution here  |
-| 3	|  Failure of Travis CI builds  | Describe solution here   |
-| 4 | Failure of Travis CI builds II  | Describe solution here  |
+| 3	|  Failure of Travis CI builds  | Removing unnecessary requirements in requirements.txt and adjusting the version of certain dependencies.  |
+| 4 | Failure of Travis CI builds II  | Build failure because 'import env' was still included in the general settings.py of the web app. Removed this |
 
 ## Work method 
 
