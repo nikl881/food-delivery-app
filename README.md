@@ -15,16 +15,14 @@ You will learn how to integrate their simple cloud storage service (S3) into you
 
 ## Sushi Delivery Express 
 
-
-This is the readme file for the online CookBook milestone project of Code Institute.<br/>
-The main purpose of this website is to show recipes in a so-called 'online cookbook'.<br/> 
-The chosen design and (layout)style is a blog-like cookbook of specific dishes from the Italian kitchen.<br/>
-This data-driven website is dynamic in nature, this means that the user of the website can add, update, edit and remove recipes in accordance with the CRUD principles.<br/>
-The user also can filter recipes based on the following criterea: Dish type, Author, Cuisine Region, Likes, Allergens, Difficulty and Cooking time. It is possible to group and summarise the recipes on the site, based on their attributes as mentioned above. 
+The Sushi Delivery Express project is a 'take-away' webapp to select and order Sushi dishes. The general purpose of this website is the fooddelivery function.
+The chosen design and layoutstyle is a typical asian order delivery webapp with a clear function and usability. 
+This data-driven website is dynamic in nature, this means that the user of the website can create an account, update account settings, order en checkout using the cart function.<br/>
+The user also can search dishes from the order page.  
 The website is fitted for mobile, tablet and desktop (fully responsive). 
 
 
-Niels de Klerk (April, 2019)
+Niels de Klerk (May, 2019)
 
 
 ## UX perspective 
@@ -33,26 +31,26 @@ Niels de Klerk (April, 2019)
 The documents of the preparation phase are included in a project location, which can be found at in the link below. 
 This includes wireframes and mockups and basic images for the branddesign. 
 
-Link to the external project documentation: https://drive.google.com/open?id=1-JhsaICva--uwgd_QD44ifeaJxX9_GPm
+Link to the external project documentation: https://drive.google.com/drive/folders/1j0HzRKoam8EjZAPFfb7HS6ehQz7dCioG?usp=sharing
 
 
 
 ## Features
 
-Existing Features (week 12 - 2019) 
+Existing Features (week 17 - 2019) 
 
-* Landing page with a list of recently added recipes (clickable overview) (dynamically loaded recipes, images and author name).
-* About page with background information about the purpose of the website.
-* Recipes page with information about the recipes, a filter function, a 'add your own recipe' function, a help function, and a overview of all recipes with image. 
-* Categories filter.
-* Detailpage of a recipe, including: Dynamicaly generated recipe name, description, cuisine region, allergens information, author, likes, ingredients, image and cooking instruction. And modify options: edit and delete recipe. 
-* Edit page with the possibility to edit all functions mentioned in the previous feature description, including recipe image source. 
-* Contact page with the possibily to write and send a text message. 
+* Landing page with a slideshow of example sushi dishes and a clear navigation bar. 
+* Create account page
+* Login/Logout page
+* Sushi menu page
+* Order/Cart page
+* Checkout page
+
 
 Features Left to Implement 
 
-* Add italian wine categories and collection based on same filters as the recipes (the site will be expanded and actually used in the future).
-* Create a simple user login and move the 'edit / update' and 'delete' functions so that they are only available for a logged in user. 
+* Customer ratings of dishes
+* Geographical page of delivery location
 
 ## Database schema and initial design
 
@@ -105,9 +103,13 @@ In this section all of the languages, frameworks, libraries, and other tools tha
     An important aspect of this project is the dynamic generation, modification and adaptation of data. 
     This is made possible by different routes between pages and data. The chosen framework to implement this is Flask.
 
-*   MongoDB <br/>
-    MongoDB is used to store the user input in a (non-relational) database. 
-    In addition, the site is already filled with stored data that is retrieved from the mongoDB database.
+*   Database <br/>
+    Database is used to store the user input in a (non-relational) database. 
+    In addition, the site is already filled with stored data that is retrieved from the mongoDB database.#
+
+*   AWS Amazon webservices 
+*   Travis CI 
+*   Python markup / check site 
 
 
 
