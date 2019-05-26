@@ -16,6 +16,8 @@ The website is fitted for mobile, tablet and desktop (fully responsive).
 
 Niels de Klerk (May, 2019)
 
+Link to live project: https://akitos-sushi-express.herokuapp.com/
+
 
 ## UX perspective 
 
@@ -40,18 +42,18 @@ Existing Features (week 17 - 2019)
 
 Features Left to Implement 
 
-* Customer ratings of individual dishes
-* Geographical page of delivery location
+* Customer ratings of individual dishes.
+* Geographical page of delivery location. 
 
 ## Database schema and initial design
 
 In order to make a good and deliberate start with this project, careful consideration was given first to the exact data flows that will become part of the (dynamic) content of the website.
 I have decided to use a non-relational data structure (No SQL). 
-This because it is quite straightforward to link recipes (as a main part / general data) to different subcategories (authors, geographic data, difference in dishes, etc.)
-Based on the studied theory of the Data Centric module, I came to the conclusion that the combination of Flask, MongoDB and Heroku will work well.
+This because it is quite straightforward to link recipes (as a main part / general data) to different subcategories.
 
 The database schema can be found in the following folder:
 
+## Usage of Django and Stripe
 
 The webapp has been build with Django, which allow us to keep track of the 'state' between the site and a particular user's browser.
 Stripe, which is a tool for Internet commerce that allows both private individuals and businesses to accept payments.
@@ -104,8 +106,9 @@ In this section all of the languages, frameworks, libraries, and other tools tha
     In addition, the site is already filled with stored data that is retrieved from the mongoDB database.#
 
 *   AWS Amazon webservices 
+
 *   Travis CI 
-*   Python markup / check site 
+
 *   Stripe
 
 
@@ -139,24 +142,23 @@ In order to be able to check whether the code functions as it was conceived duri
 Below the main features described that are basic functions as currently available on the site.
 
 * Main navigation and information - 
-    * Open recipes in the 'recently added' list. 
-    * Navigate back to index.html using the main navigation function (menu).
+    * Navigate back and forth using the main navigation function (menu).
     * Try to navigate on different devices with different screenresolutions within the main navigation. 
-    * Use specific navigation buttons, i.e. 'recipes' or 'quickview'. 
+    * Use specific navigation buttons, i.e. 'cart' or 'checkout'. 
   
-* Use of the recipes page - 
-    * Select a recipe based on filter criterea (i.e. region, author, allergens). 
-    * Open recipe to navigate to detailpage of a specific recipe.
-    * Use the add recipe button. 
+* Use of the order page - 
+    * Select a single and multiple sushi dishes. 
+    * increase the number of selected dishes.
+    * deselect a dish.
  
-* Use of the detailpage - 
-    * Give a like/upvote to the recipe.
-    * Edit recipe, i.e. ingredients, author, allergens, cooking instruction. 
-    * Change recipe image with new URL.
-    * Delete the recipe and return to recipe page. 
+* Use of the cart page - 
+    * Change the amout of selected dishes.
 
-* Use of the contactpage - 
-    * Send (feedback) message using the form. 
+* Use of the create account page - 
+    * Try to make a new useraccount and login.
+
+* Use of the checkout page - 
+    * Enter false and correct payment details.
 
 
 
@@ -164,16 +166,10 @@ Below the main features described that are basic functions as currently availabl
 
 | Issue number    | Description     | Implemented Solution  |
 | ------------- |:-------------:| -----:|
-| 1	| Detailpage shows all recipes and not ID of one recipe | Changed app.py route based on proper ID fields return render_template("detailpage.html", recipe=recipe)    |
-| 2	|  Menu items in main navigation are outside navbar |  Replaced the custom header into Bootstrap header and rebuild into desired style|
-| 3	|   Width of page not neat on all views during testphase  | Created a container class with a max width of 700px on all elements |
-| 4 | Recipe images did not load via Flask/Python   | Added url based datbasefields to routing paths  |
-| 5 | New recipes only loaded on /recipes page not in overview on /index  | Added additional Flask routing with specific fields on needed places  |
-| 6 | Database data is not shown on front-end   | Changed the @app.route with the correct paths. Issue was that the data was searched in the wrong db collection  |
-| 7 | Option field in form gave duplicate data when refreshing page  | Changed Flask routing paths to single injection instead of multiinjection in option form fields  |
-| 8 | Heroku could not load app from heroku page (git staging had no issues) | Changed Procfile to similair procfile on Heroku dashboard  |
-| 9 | Filter route wont show result of selected filter options | Changed the route from base.html   |
-| 10 | Security variable / PORT settings - give a authentification error with the effect that the project won't load | Followed the lessons again to link the database to the working environment in cloud9. Reconfigured and resolved the issue.  |
+| 1	| Django /checkout/ wont load | Describe solution here    |
+| 2	|  Images are uploaded in AWS backend but wont show to live project |  Describe solution here  |
+| 3	|  Failure of Travis CI builds  | Describe solution here   |
+| 4 | Failure of Travis CI builds II  | Describe solution here  |
 
 ## Work method 
 
@@ -200,7 +196,7 @@ Because this project has a dynamic and data-driven design, it was decided to use
 4. And finally, created a Procfile, the file that tells Heroku how to run the project.
 
 
-*   The live version of the project is available at the following link: https://personal-blog-2019.herokuapp.com/
+*   The live version of the project is available at the following link: https://akitos-sushi-express.herokuapp.com/
 
 ## Credits
 
