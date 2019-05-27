@@ -1,4 +1,4 @@
-
+import env
 import os
 import dj_database_url
 
@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     'products',
     'cart',
     'checkout',
-    'storages'
+    'storages',
+    'home',
 ]
 
 MIDDLEWARE = [
@@ -144,7 +145,7 @@ MEDIAFILES_LOCATION = 'media'
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_URL = "https://{}/{}/".format(AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.getenv('STRIPE_SECRET')
