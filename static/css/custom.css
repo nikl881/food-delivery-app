@@ -69,6 +69,6 @@ caption p {
     margin-bottom: 25px;
 }
 
-h1{
+h1, .h1 {
     color:red;
 }
