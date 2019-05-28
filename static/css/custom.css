@@ -164,3 +164,10 @@ footer .cv-pdf i:hover {
 .container-fluid .navbar-brand {
     color: white;
 }
+
+.navbar-default .navbar-brand{
+    color: white; 
+}
+.navbar-default .navbar-brand a{
+    color: white; 
+}
