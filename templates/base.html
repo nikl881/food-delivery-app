@@ -37,14 +37,14 @@
                     {% if user.is_authenticated %}
                         <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i> My Profile</a></li>
                         <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i> Log Out</a></li>
-                        <li><a href="{% url 'products' %}"><i class="fa fa-sign-out"></i>Sushi Menu</a></li>
+                        <li><a href="{% url 'products' %}"><i class="fa fa-cutlery"></i> Sushi Menu</a></li>
                     {%  else %}
                         <li><a href="{% url 'register' %}"><i class="fa fa-user-plus"></i> Register</a></li>
                         <li><a href="{% url 'login' %}"><i class="fa fa-sign-in"></i> Log In</a></li>
                     {% endif %}
                     <li>
                         <a href="{% url 'view_cart' %}">
-                            <i class="fa fa-shipping-cart"></i> Order list
+                            <i class="fa fa-list"></i> Order list
                             {% if product_count > 0 %}
                             <label class="badge badge-warning">{{ product_count }}</label>
                             {% endif %}
@@ -77,7 +77,7 @@
        <footer class="container-fluid">
             <div class="row">
                 <div class="col-sm-12"></div>
-                    <h5 class="uppercase general-sub">Contact us on social media</h5>
+                    <h5 class="uppercase general-sub">Contact Akito's Sushi Express on social media for special deals</h5>
                     <ul class="list-inline social-links">
                   <li><a target="_blank" href="https://twitter.com/?lang=nl"><i class="fa fa-twitter"></i></a></li>
                         <li><a target="_blank" href="https://instagram.com"><i class="fa fa-instagram"></i></a></li>

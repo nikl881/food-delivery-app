@@ -23,6 +23,14 @@ footer {
     
 }
 
+.col-md-4{
+    font-family: calibri; 
+}
+
+h3{
+    color: red; 
+}
+
 .icon-bar {
     background-color: #fff;
 }
@@ -169,5 +177,9 @@ footer .cv-pdf i:hover {
     color: white; 
 }
 .navbar-default .navbar-brand a{
+    color: white; 
+}
+
+.navbar-default .navbar-nav > li > a{
     color: white; 
 }
