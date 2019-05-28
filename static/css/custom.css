@@ -12,9 +12,6 @@ footer {
     background-color: black; 
 }
 
-h5 {
-    margin-left: 800px
-}
 
 .container-fluid{
     background-color: black; 
@@ -162,4 +159,8 @@ footer .cv-pdf i:hover {
 
 @media screen and (max-width:800px) {
     .main-foto {display:none}
+}
+
+.container-fluid .navbar-brand {
+    color: white;
 }
