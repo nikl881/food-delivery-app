@@ -8,8 +8,12 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px solid #ededed;
-    color: #A9A9A9;
+    color: #fff;
     background-color: black; 
+}
+
+h5 {
+    margin-left: 800px
 }
 
 .container-fluid{
@@ -84,3 +88,78 @@ h1, .h1 {
     color:red;
 }
 
+.navbar{
+    background-image: linear-gradient(#000, #000 60%, #000);
+}
+
+/*--------------------------------------------Footer*/
+
+footer {
+    background-color: #262626;
+    color: #ffffff;
+    font-size: 25px;
+    min-height: 120px;
+    display: table;
+    text-align: center; 
+    margin-left: auto;
+    margin-right: auto; 
+    width: 100%;
+    clear: both;
+    height: 40px;
+
+}
+    
+
+footer .cv-pdf i {
+    color: #fafafa;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+footer .cv-pdf i:hover {
+    color: #33ffad;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #33ffad; 
+}
+
+#footer-details {
+    margin: 20px;
+
+}
+
+/*--------------------------------------------Media Queries*/
+
+@media screen and (max-width:800px) {
+    .second-logo {display:none}
+}
+
+@media screen and (max-width:800px) {
+    .main-foto {display:none}
+}
