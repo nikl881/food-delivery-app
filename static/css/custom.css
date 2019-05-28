@@ -9,6 +9,17 @@ footer {
     padding-bottom: 20px;
     border-top: 1px solid #ededed;
     color: #A9A9A9;
+    background-color: black; 
+}
+
+.container-fluid{
+    background-color: black; 
+}
+
+.col-md-12 a{
+    font-size: 25px; 
+    font-weight: bold; 
+    
 }
 
 .icon-bar {
@@ -72,3 +83,4 @@ caption p {
 h1, .h1 {
     color:red;
 }
+
