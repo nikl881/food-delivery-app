@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>Success!</h2>
-    <p>You are logged in as {{ user.email }} </p>
+    <h2>Welcome {{ user.name }} to Akito's Sushi Express, you are succesfully logged in!</h2>
+    <p>You are logged in with the following emailadres: {{ user.email }} </p>
+
 {% endblock %}
