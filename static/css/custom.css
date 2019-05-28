@@ -10,11 +10,13 @@ footer {
     border-top: 1px solid #ededed;
     color: #fff;
     background-color: black; 
+    flex-shrink: 0;
 }
 
 
 .container-fluid{
     background-color: black; 
+    margin-top: 250px; 
 }
 
 .col-md-12 a{
