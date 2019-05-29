@@ -1,4 +1,4 @@
-![Welcome](https://raw.githubusercontent.com/nikl881/food-delivery-app/master/sushi.jpg)
+![Welcome](https://s3.eu-central-1.amazonaws.com/food-delivery-app/static/images/sushi.jpg)
 
 ## Travis CI Build status
 
@@ -10,8 +10,7 @@
 The Sushi Delivery Express project is a 'take-away' webapp to select sushi from the menu and order dishes using customer adres- and payment information (creditcard). The general purpose of this website is to search, select and purchase sushi dishes.
 The chosen design and layoutstyle is a typical asian order delivery webapp with a clear function and usability. It is logical for the user to create an account  and then use the offered services.
 This data-driven website has a dynamic setup. This means that the user can create an account, update account settings, order food en checkout using the orderlist cart and checkout function.
-The user also can search for dishes based on name criterea inside the order page.  
-The website is fitted for mobile, tablet and desktop (fully responsive). 
+The user also can search for dishes based on name criterea inside the order page. The website is fitted for mobile, tablet and desktop (fully responsive). 
 
 
 Niels de Klerk (May, 2019)
@@ -93,14 +92,14 @@ In this section all of the languages, frameworks, libraries, and other tools tha
     Database is used to load products and to store the user input. 
     The project connects to a Postgres database using Django’s ORM.#
 
-*   AWS Amazon webservices 
+*   AWS Amazon webservices </br>
     Used to host the project (using S3).
 
-*   Travis CI 
+*   Travis CI <br/>
     Used for testing and continuous integration of the development of the webapp. 
 
-*   Stripe
-    Stripe provides APIs that are used to integrate payment processing into the application. 
+*   Stripe <br/>
+    Stripe provides APIs that are used to integrate payment processing into the application (Django checkout app). 
 
 ## Database schema and initial design
 
@@ -111,10 +110,12 @@ I have decided to use a postgres database.This because it is quite straightforwa
 
 Various methods have been used to test the code of the website. During development, there has been continuously tested on the quality of the code. 
 This has been done by checking the correct functionality of the code on different screensizes, different resolutions,
-different devices (mobile, tablet, desktop). This approach is used from the start to the end of the realization of the project.
+different devices (mobile, tablet, desktop). This approach is used from the start to the end of the realization of the project.Separate test scripts have been created to test views.py, forms.py (checkout) and models.py.
 
 PEP8 was used to check the quality of the python code. This is an online validator to check whether the code complies with the PEP8 directive.
 Besides, flake8 is used for additional Python style validation.
+
+
 
 
 The code has been tested on the following devices and is fitted for purpose on a laptop, desktop or large desktop: 
@@ -165,11 +166,11 @@ Below the main features described that are basic functions as currently availabl
 | Issue number    | Description     | Implemented Solution  |
 | ------------- |:-------------:| -----:|
 | 1	| Django /checkout/ app won't load | Rebuilding urls.py and settings.py until configuration loaded succesfully  |
-| 2	|  Images are uploaded in AWS backend but wont show to live project |  re-studied the theory and learned more about using 'collectstatic'  |
-| 3	|  Failure of Travis CI builds  | Removing unnecessary requirements in requirements.txt and adjusting the version of certain dependencies.  |
+| 2	| Images are uploaded in AWS backend but wont show to live project |  re-studied the theory and learned more about using 'collectstatic'  |
+| 3	| Failure of Travis CI builds  | Removing unnecessary requirements in requirements.txt and adjusting the version of certain dependencies.  |
 | 4 | Failure of Travis CI builds II  | Build failure because 'import env' was still included in the general settings.py of the web app. Removed this |
 | 5 | Failure of Travis CI builds III  | Removed incompliant test database fields from env.py |
-| 6 | custom css won't load | Changed the hierarchy and order of loading files. |
+| 6 | custom CSS won't load | Changed the hierarchy and order of loading files. |
 
 
 ## Work method 
