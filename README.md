@@ -45,10 +45,8 @@ Features Left to Implement
 
 ## Usage of Django and Stripe
 
-The webapp has been build with Django, which allow us to keep track of the 'state' between the site and a particular user's browser.
-Stripe, which is a tool for Internet commerce that allows both private individuals and businesses to accept payments.
-This has been integrated into this Django app. Amazon Web Services is a subsidiary of amazon.com that provides on-demand cloud computing platforms to individuals and companies.
-The simple AWS cloud storage service (S3) has been used into this Django project. With this static and media files are saved in the AWS backend.
+The webapp has been build with Django. Stripe, which is a tool for e-commerce that allows both private individuals and businesses to accept payments is implementet and has been integrated into this Django app. Amazon Web Services is a subsidiary of amazon.com that provides on-demand cloud computing platforms to individuals and companies.
+The  AWS cloud storage service (S3) has been used into this Django project. On S3 all static and media files are saved in the AWS backend.
 
 
 ## Technologies Used
@@ -89,17 +87,17 @@ In this section all of the languages, frameworks, libraries, and other tools tha
 
 *   Python / Flask <br/> 
     An important aspect of this project is the dynamic generation, modification and adaptation of data. 
-    This is made possible by different routes between pages and data. The chosen framework to implement this is Flask.
+    This is made possible by different routes between pages and data. 
 
 *   Postgres Database <br/>
     Database is used to load products and to store the user input. 
     The project connects to a Postgres database using Django’s ORM.#
 
 *   AWS Amazon webservices 
+    Used to host the project (using S3).
 
 *   Travis CI 
     Used for testing and continuous integration of the development of the webapp. 
-
 
 *   Stripe
     Stripe provides APIs that are used to integrate payment processing into the application. 
