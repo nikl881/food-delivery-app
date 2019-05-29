@@ -7,25 +7,22 @@
 
 ## Sushi Delivery Express 
 
-The Sushi Delivery Express project is a 'take-away' webapp to select sushi from the menu and order dishes using customer adres- and billing information. The general purpose of this website is to select and purchase sushi dishes.
-The chosen design and layoutstyle is a typical asian order delivery webapp with a clear function and usability. 
-This data-driven website is dynamic in nature, this means that the user of the website can create an account, update account settings, order food en checkout using the cart and checkout function.
+The Sushi Delivery Express project is a 'take-away' webapp to select sushi from the menu and order dishes using customer adres- and payment information (creditcard). The general purpose of this website is to search, select and purchase sushi dishes.
+The chosen design and layoutstyle is a typical asian order delivery webapp with a clear function and usability. It is logical for the user to create an account  and then use the offered services.
+This data-driven website has a dynamic setup. This means that the user can create an account, update account settings, order food en checkout using the orderlist cart and checkout function.
 The user also can search for dishes based on name criterea inside the order page.  
 The website is fitted for mobile, tablet and desktop (fully responsive). 
 
 
 Niels de Klerk (May, 2019)
 
-Link to live project: https://akitos-sushi-express.herokuapp.com/
 
 
 ## UX perspective 
 
 
-The documents of the preparation phase are included in a project location, which can be found at in the link below. 
-This includes wireframes and mockups and basic images for the branddesign. 
-
-Link to the external project documentation: https://drive.google.com/drive/folders/1j0HzRKoam8EjZAPFfb7HS6ehQz7dCioG?usp=sharing
+The documents of the preparation phase are included in a separate project location, which can be found at in the link below. 
+This includes wireframes and mockups and basic images for the branddesign. Link to the external project documentation: https://drive.google.com/drive/folders/1j0HzRKoam8EjZAPFfb7HS6ehQz7dCioG?usp=sharing
 
 
 ## Features
@@ -33,8 +30,8 @@ Link to the external project documentation: https://drive.google.com/drive/folde
 Existing Features (week 17 - 2019) 
 
 * Landing page with a slideshow of example sushi dish images and a clear navigation bar. 
-* Register page, so a new customer can create an account to order dishes. 
-* Login/Logout page, a clear and simpel login page that will login a user with a single mouse click.
+* Register page, so a new customer can create an account. 
+* Login/Logout page, a clear and simpel page that will login a user with a single mouse click.
 * Sushi menu page, overview of all available sushi dishes, including images, price information and quantitiy information.
 * Order/Cart page, a short overview page with a summary of the total costs of the order.
 * Checkout page, includes billing and adres information to complete the order.
@@ -45,13 +42,6 @@ Features Left to Implement
 * Customer ratings of individual dishes.
 * Geographical page of delivery location. 
 
-## Database schema and initial design
-
-In order to make a good and deliberate start with this project, careful consideration was given first to the exact data flows that will become part of the (dynamic) content of the website.
-I have decided to use a non-relational data structure (No SQL). 
-This because it is quite straightforward to link recipes (as a main part / general data) to different subcategories.
-
-The database schema can be found in the following folder:
 
 ## Usage of Django and Stripe
 
@@ -114,6 +104,11 @@ In this section all of the languages, frameworks, libraries, and other tools tha
 *   Stripe
     Stripe provides APIs that are used to integrate payment processing into the application. 
 
+## Database schema and initial design
+
+In order to make a good and deliberate start with this project, careful consideration was given first to the exact data flows that will become part of the (dynamic) content of the website.
+I have decided to use a postgres database.This because it is quite straightforward to link individual data.The database schema can be found in the external project folder.
+
 ## Testing
 
 Various methods have been used to test the code of the website. During development, there has been continuously tested on the quality of the code. 
@@ -121,6 +116,7 @@ This has been done by checking the correct functionality of the code on differen
 different devices (mobile, tablet, desktop). This approach is used from the start to the end of the realization of the project.
 
 PEP8 was used to check the quality of the python code. This is an online validator to check whether the code complies with the PEP8 directive.
+Besides, flake8 is used for additional Python style validation.
 
 
 The code has been tested on the following devices and is fitted for purpose on a laptop, desktop or large desktop: 
@@ -139,7 +135,7 @@ Site viewed and tested in the following browsers:
     * Internet Explorer    
     
 Mockups and sketches were also used to continuously build and deliver in accordance to the initial plan and design of the website.
-In the final phase of the project, the opinion of a number of people was asked. We used professinoals and non professionals to see iff the site functions properly from a certain perspective. 
+In the final phase of the project, the opinion of a number of people was asked. I asked programmers and non professionals to see iff the site functions properly from a certain perspective. 
 In order to be able to check whether the code functions as it was conceived during the design phase, we tested the functions on a basis of different scenarios.
 Below the main features described that are basic functions as currently available on the site.
 
@@ -170,17 +166,23 @@ Below the main features described that are basic functions as currently availabl
 
 | Issue number    | Description     | Implemented Solution  |
 | ------------- |:-------------:| -----:|
-| 1	| Django /checkout/ app won't load | Rebuilding urls.py and settings.py until configuration is working  |
-| 2	|  Images are uploaded in AWS backend but wont show to live project |  Describe solution here  |
+| 1	| Django /checkout/ app won't load | Rebuilding urls.py and settings.py until configuration loaded succesfully  |
+| 2	|  Images are uploaded in AWS backend but wont show to live project |  re-studied the theory and learned more about using 'collectstatic'  |
 | 3	|  Failure of Travis CI builds  | Removing unnecessary requirements in requirements.txt and adjusting the version of certain dependencies.  |
 | 4 | Failure of Travis CI builds II  | Build failure because 'import env' was still included in the general settings.py of the web app. Removed this |
-| 5 | custom css won't load | Describe solution here  |
+| 5 | Failure of Travis CI builds III  | Removed incompliant test database fields from env.py |
+| 6 | custom css won't load | Changed the hierarchy and order of loading files. |
 
 
 ## Work method 
 
 During the development of this project Trello (Trello.com) is used as a simple project management tool to develop in a controlled project environment. I have used the 'trello-board' for all the 
-actions within the project; initializing the project until the completion. The trello-board has been used for: preperation actions, building functionalities, testwork and debugging. 
+actions within the project; initializing the project until the completion. The trello-board has been used for: 
+
+* preperation actions / conceptualization
+* building functionalities (mini sprints)
+* testwork 
+* debugging / issue tracking
 
 
 ## Deployment
@@ -191,7 +193,8 @@ During the development period a upload was made to GitHub after every 3 to 4 hou
 1. Builded the site on a local environment.
 2. Staged the files in the stage area.
 3. Perform push to Heroku (workspace / remote app)
-4. Perform push to Github (Git directory / repository).
+4. Perform push to Github (Git directory / repository) in comments section.
+5. After a inspection (validation) merged comments section to master branch.
 
 
 Because this project has a dynamic and data-driven design, it was decided to use Heroku to host this python project. The following method has been used to achieve a good deployment:
@@ -210,5 +213,5 @@ This README file is based on the Code Institute template.
 
 ## Media
 
-*  The used recipe images/photo's are downloaded from the Shutterstock database (https://www.shutterstock.com), from Istockphoto (https://www.istockphoto.com/nl), and from Adobe Images (used Adobe Pro)
+*  The used recipe images/photo's are downloaded from the Shutterstock database (https://www.shutterstock.com), from Istockphoto (https://www.istockphoto.com/nl), and from Adobe Images (used Adobe Pro).
 
