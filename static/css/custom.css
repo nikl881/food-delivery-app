@@ -10,20 +10,27 @@ footer {
     border-top: 1px solid #ededed;
     color: #fff;
     background-color: black; 
+    flex-shrink: 0;
 }
 
-h5 {
-    margin-left: 800px
-}
 
 .container-fluid{
     background-color: black; 
+    margin-top: 250px; 
 }
 
 .col-md-12 a{
     font-size: 25px; 
     font-weight: bold; 
     
+}
+
+.col-md-4{
+    font-family: calibri; 
+}
+
+h3{
+    color: red; 
 }
 
 .icon-bar {
@@ -162,4 +169,19 @@ footer .cv-pdf i:hover {
 
 @media screen and (max-width:800px) {
     .main-foto {display:none}
+}
+
+.container-fluid .navbar-brand {
+    color: white;
+}
+
+.navbar-default .navbar-brand{
+    color: white; 
+}
+.navbar-default .navbar-brand a{
+    color: white; 
+}
+
+.navbar-default .navbar-nav > li > a{
+    color: white; 
 }
