@@ -101,14 +101,15 @@ In this section all of the languages, frameworks, libraries, and other tools tha
     An important aspect of this project is the dynamic generation, modification and adaptation of data. 
     This is made possible by different routes between pages and data. The chosen framework to implement this is Flask.
 
-*   Database <br/>
-    Database is used to store the user input in a (non-relational) database. 
-    In addition, the site is already filled with stored data that is retrieved from the mongoDB database.#
+*   Postgres Database <br/>
+    Database is used to load products and to store the user input. 
+    The project connects to a Postgres database using Django’s ORM.#
 
 *   AWS Amazon webservices 
 
 *   Travis CI 
-    Used for testing and Continuous integration of the development of the webapp. 
+    Used for testing and continuous integration of the development of the webapp. 
+
 
 *   Stripe
     Stripe provides APIs that are used to integrate payment processing into the application. 
@@ -157,9 +158,11 @@ Below the main features described that are basic functions as currently availabl
 
 * Use of the create account page - 
     * Try to make a new useraccount and login.
+    * Try to reset password
 
 * Use of the checkout page - 
-    * Enter false and correct payment details.
+    * Enter false payment details.
+    * Enter correct payment details (and checkout).
 
 
 
@@ -167,10 +170,12 @@ Below the main features described that are basic functions as currently availabl
 
 | Issue number    | Description     | Implemented Solution  |
 | ------------- |:-------------:| -----:|
-| 1	| Django /checkout/ won't load | Rebuilding urls.py and settings.py until configuration is working  |
+| 1	| Django /checkout/ app won't load | Rebuilding urls.py and settings.py until configuration is working  |
 | 2	|  Images are uploaded in AWS backend but wont show to live project |  Describe solution here  |
 | 3	|  Failure of Travis CI builds  | Removing unnecessary requirements in requirements.txt and adjusting the version of certain dependencies.  |
 | 4 | Failure of Travis CI builds II  | Build failure because 'import env' was still included in the general settings.py of the web app. Removed this |
+| 5 | custom css won't load | Describe solution here  |
+
 
 ## Work method 
 
