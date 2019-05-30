@@ -1,17 +1,13 @@
 from django.test import TestCase
-from .products import Item
+from .models import Order
 
-# test models
-class TestItemModel(TestCase):
+class TestToDoItemForm(TestCase):
 
-    def test_done_defaults_to_False(self):
-        item = Item(name="Create Test")
-        item.save()
-        self.assertEqual(item.name, "Create Test")
-        self.assertFalse(item.done)
+    def test_can_create_an_item_with_just_a_name(self):
+        form = ItemForm({'name': 'Create Tests'})
+        self.assertTrue(form.is_valid())
     
-    def test_can_create_an_item_with_a_name_and_status(self):
-        item = Item(name="Create Test", done=True)
-        item.save()
-        self.assertEqual(item.name, "Create  Test")
-        self.assertTrue(item.done)
+    def test_correct_message_for_missing_name(self):
+        form = ItemForm({'form': ''})
+        self.assertFalse(form.is_valid())
+        self.assertEqual(form.errors['name'], [u'This field is required.'])
