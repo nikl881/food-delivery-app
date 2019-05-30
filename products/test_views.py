@@ -15,7 +15,7 @@ class TestViews(TestCase):
         self.assertTemplateUsed(page, "item_form.html")
     
     def test_get_edit_item_page(self):
-        item = Item(name="Create a Test")
+        item = Item(name="Create  Test")
         item.save()
 
         page = self.client.get("/edit/{0}".format(item.id))
