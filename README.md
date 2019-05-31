@@ -16,14 +16,6 @@ The user also can search for dishes based on name criterea inside the order page
 Niels de Klerk (May, 2019)
 
 
-
-## UX perspective 
-
-
-The documents of the preparation phase are included in a separate project location, which can be found at in the link below. 
-This includes wireframes and mockups and basic images for the branddesign. Link to the external project documentation: https://drive.google.com/drive/folders/1j0HzRKoam8EjZAPFfb7HS6ehQz7dCioG?usp=sharing
-
-
 ## Features
 
 Existing Features (week 17 - 2019) 
@@ -101,6 +93,11 @@ In this section all of the languages, frameworks, libraries, and other tools tha
 *   Stripe <br/>
     Stripe provides APIs that are used to integrate payment processing into the application (Django checkout app). 
 
+## UX perspective 
+
+The documents of the preparation phase are included in a separate project location, which can be found at in the link below. 
+This includes wireframes and mockups and basic images for the branddesign. Link to the external project documentation: https://drive.google.com/drive/folders/1j0HzRKoam8EjZAPFfb7HS6ehQz7dCioG?usp=sharing
+
 ## Database schema and initial design
 
 In order to make a good and deliberate start with this project, careful consideration was given first to the exact data flows that will become part of the (dynamic) content of the website.
@@ -114,8 +111,6 @@ different devices (mobile, tablet, desktop). This approach is used from the star
 
 PEP8 was used to check the quality of the python code. This is an online validator to check whether the code complies with the PEP8 directive.
 Besides, flake8 is used for additional Python style validation.
-
-
 
 
 The code has been tested on the following devices and is fitted for purpose on a laptop, desktop or large desktop: 
