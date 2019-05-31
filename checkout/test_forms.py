@@ -7,9 +7,9 @@ class TestOrderform(TestCase):
 
     def test_can_create_an_item_with_a_name(self):
         
-        form = OrderForm({'full_name': 'Create Tests', 'phone_number': '12345678', 'country': 'country', 'postcode': '1234AA',
-            'town_or_city': 'town', 'street_address1': 'adres1', 'street_address2': 'adres2',
-            'county': 'country'})
+        form = OrderForm({'full_name' : 'Create Tests' , 'phone_number' : '12345678' , 'country' : 'country' , 'postcode' : '1234AA',
+            'town_or_city' : 'town', 'street_address1' : 'adres1' , 'street_address2' : 'adres2',
+            'county' : 'country'})
         
         self.assertTrue(form.is_valid())
     
