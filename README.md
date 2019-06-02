@@ -115,7 +115,7 @@ actions within the project; initializing the project until the completion. The t
 
 Below a screenshot of the projectmanagement board of Trello taken during the development of this project.
 
-![Welcome](https://s3.eu-central-1.amazonaws.com/food-delivery-app/static/images/screenshot_trello.png)
+![Trello](https://food-delivery-app.s3.eu-central-1.amazonaws.com/media/images/screenshot+trello.png)
 
 
 ## Testing
