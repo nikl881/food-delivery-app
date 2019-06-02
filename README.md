@@ -25,18 +25,18 @@ Existing Features (week 17 - 2019)
 * Login/Logout page, a clear and simpel page that will login a user with a single mouse click.
 * Sushi menu page, overview of all available sushi dishes, including images, price information and quantitiy information.
 * Order/Cart page, a short overview page with a summary of the total costs of the order.
-* Checkout page, includes billing and adres information to complete the order.
+* Checkout page, includes billing and adres information to complete the order, incuding verification on on completed fields.
 
 
 Features Left to Implement 
 
-* Customer ratings of individual dishes.
-* Geographical page of delivery location. 
+* Customer rating/upvotes of individual dishes.
+* Geographical page of delivery location (maps). 
 
 
 ## Usage of Django and Stripe
 
-The webapp has been build with Django. Stripe, which is a tool for e-commerce that allows both private individuals and businesses to accept payments is implementet and has been integrated into this Django app. Amazon Web Services is a subsidiary of amazon.com that provides on-demand cloud computing platforms to individuals and companies.
+The webapp has been build with Django. Stripe, which is a tool for e-commerce that allows both private individuals and businesses to accept payments, is implementet and has been integrated into this Django app. Amazon Web Services is a subsidiary of amazon.com that provides on-demand cloud computing platforms to individuals and companies.
 The  AWS cloud storage service (S3) has been used into this Django project. On S3 all static and media files are saved in the AWS backend.
 
 
@@ -82,7 +82,7 @@ In this section all of the languages, frameworks, libraries, and other tools tha
 
 *   Postgres Database <br/>
     Database is used to load products and to store the user input. 
-    The project connects to a Postgres database using Django’s ORM.#
+    The project connects to a Postgres database using Django’s ORM.
 
 *   AWS Amazon webservices </br>
     Used to host the project (using S3).
@@ -101,7 +101,22 @@ This includes wireframes and mockups and basic images for the branddesign. Link 
 ## Database schema and initial design
 
 In order to make a good and deliberate start with this project, careful consideration was given first to the exact data flows that will become part of the (dynamic) content of the website.
-I have decided to use a postgres database.This because it is quite straightforward to link individual data.The database schema can be found in the external project folder.
+I have decided to use a postgres database.This because it is quite straightforward to link individual data.
+
+## Work method 
+
+During the development of this project Trello (Trello.com) is used as a simple project management tool to develop in a controlled project environment. I have used the 'trello-board' for all the 
+actions within the project; initializing the project until the completion. The trello-board has been used for: 
+
+* preperation actions / conceptualization
+* building functionalities (mini sprints)
+* testwork 
+* debugging / issue tracking
+
+Below a screenshot of the projectmanagement board of Trello taken during the development of this project.
+
+![Welcome](https://s3.eu-central-1.amazonaws.com/food-delivery-app/static/images/screenshot_trello.png)
+
 
 ## Testing
 
@@ -166,17 +181,9 @@ Below the main features described that are basic functions as currently availabl
 | 4 | Failure of Travis CI builds II  | Build failure because 'import env' was still included in the general settings.py of the web app. Removed this |
 | 5 | Failure of Travis CI builds III  | Removed incompliant test database fields from env.py |
 | 6 | custom CSS won't load | Changed the hierarchy and order of loading files. |
-
-
-## Work method 
-
-During the development of this project Trello (Trello.com) is used as a simple project management tool to develop in a controlled project environment. I have used the 'trello-board' for all the 
-actions within the project; initializing the project until the completion. The trello-board has been used for: 
-
-* preperation actions / conceptualization
-* building functionalities (mini sprints)
-* testwork 
-* debugging / issue tracking
+| 7 | Heroku could not deploy  (git staging had no issues) | Changed Procfile to similair procfile on Heroku dashboard  |
+| 8 | Filter route wont show result of selected filter options | Changed the route from base.html   |
+| 9 | Security variable / PORT settings - give a authentification error | Followed the lessons again to link the database to the working environment in cloud9. Reconfigured and resolved the issue.  |
 
 
 ## Deployment
