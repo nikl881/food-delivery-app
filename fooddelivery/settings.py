@@ -1,4 +1,3 @@
-
 import os
 import dj_database_url
 
@@ -7,12 +6,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
 
 ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '127.0.0.1', 'akitos-sushi-express.herokuapp.com']
 
 
-# Application definition
+# Applications
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -29,6 +29,8 @@ INSTALLED_APPS = [
     'storages',
     'home',
 ]
+
+# Middleware
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -97,7 +99,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 # Internationalization
-# https://docs.djangoproject.com/en/1.11/topics/i18n/
+
 
 LANGUAGE_CODE = 'en-us'
 
@@ -109,7 +111,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-
+# AWS configuration
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
