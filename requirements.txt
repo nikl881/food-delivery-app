@@ -1,5 +1,5 @@
 Django==1.11.15
-Pillow==5.4.1
+Pillow==9.3.0
 boto3==1.9.153
 botocore==1.12.153
 certifi==2019.3.9
